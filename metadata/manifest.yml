@@ -1,0 +1,22 @@
+Name: nginx
+Cartridge-Short-Name: NGINX
+Display-Name: Nginx Cartridge
+Source-Url: https://github.com/zinh/openshift-nginx-cartridge.git
+Cartridge-Vendor: zinh
+Description: "A nginx cartridge for development use only."
+Version: '0.1'
+License: "None"
+Vendor: microV Corp. 
+Cartridge-Version: 0.0.1
+Categories:
+  - service
+  - web_framework
+Endpoints:
+  - Private-IP-Name:   IP
+    Private-Port-Name: PORT
+    Private-Port:      8080
+    Public-Port-Name:  PROXY_PORT
+    Mappings:
+      - Frontend:      ""
+        Backend:       ""
+        Options:       { websockets: false }
